@@ -1,8 +1,14 @@
-export default function Button({ children, onClick }) {
+import type React from "react";
+
+interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export default function Button({ children, className }: ButtonProps) {
   return (
     <button
-      className={`mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 flex items-center justify-center gap-2`}
-      onClick={onClick}
+      className={`mt-2 px-4 py-2 rounded-md transition duration-300 gap-2 ${className}`}
     >
       {children}
     </button>

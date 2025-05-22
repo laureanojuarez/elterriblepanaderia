@@ -16,13 +16,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <div
-      className={`flex flex-col gap-2 p-4 border-2 border-gray-300 rounded-lg shadow-md ${
+      className={`bg-stone-300 flex flex-col gap-2 p-4 border-2 border-gray-600 rounded-lg shadow-md ${
         isProductPage ? "max-w-sm" : "max-w-xs"
       }`}
     >
-      <h1 className="text-xl font-bold">{name}</h1>
+      <h1 className="text-2xl font-light">{name}</h1>
       <img
-        src={img || "https://placehold.co/500x500"}
+        src={img}
         alt={name}
         className="w-full h-64 object-cover rounded-lg"
       />

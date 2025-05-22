@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import { HomePage } from "../pages/Home/Home.tsx";
 import { ProductsPage } from "../pages/Products/ProductsPage.tsx";
+import { HomePage } from "../pages/Home/Home.tsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css";

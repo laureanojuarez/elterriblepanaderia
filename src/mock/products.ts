@@ -9,7 +9,7 @@ export const products = [
     id: 2,
     name: "Medialunas",
     desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    img: null,
+    img: "images/panificacion/medialunas.jpg",
   },
   {
     id: 3,

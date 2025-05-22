@@ -8,7 +8,7 @@ export function ProductsPage() {
         <p className="text-lg text-gray-700">Welcome to the Products Page!</p>
       </div>
 
-      <ProductSection />
+      <ProductSection isProductPage={true} />
     </>
   );
 }

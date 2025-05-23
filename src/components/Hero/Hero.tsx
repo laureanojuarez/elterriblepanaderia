@@ -1,8 +1,8 @@
-import heroPanaderia from "../../assets/heroPanaderia.jpg";
+import heroPanaderia from "../../assets/heropanaderia.jpg";
 
 export const Hero = () => {
   return (
-    <section className="">
+    <section>
       <img
         src={heroPanaderia}
         alt="Portada Panaderia"

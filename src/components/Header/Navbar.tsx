@@ -60,7 +60,11 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
 
       {/* Menú móvil desplegable */}
       {open && (
-        <div className="md:hidden bg-white shadow-lg fixed left-0 right-0 top-12 z-40 p-4">
+        <div
+          className={`md:hidden bg-stone-100 shadow-lg fixed left-0 right-0 z-40 p-4 ${
+            isScrolled ? "top-11" : "top-20"
+          } duration-700`}
+        >
           <ul className="flex flex-col gap-4 text-lg text-gray-800">
             <li
               className="hover:text-gray-600 cursor-pointer"

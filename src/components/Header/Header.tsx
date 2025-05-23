@@ -15,12 +15,12 @@ export const Header = () => {
 
   return (
     <header
-      className={`flex justify-evenly items-center top-0 w-full bg-stone-100 transition-all duration-300 fixed ${
+      className={` flex justify-center items-center w-full bg-stone-100 transition-all duration-700 fixed ${
         isScrolled ? "h-13 shadow-md" : "h-20"
       } `}
     >
       <Logo isScrolled={isScrolled} />
-      <Navbar />
+      <Navbar isScrolled={isScrolled} />
     </header>
   );
 };

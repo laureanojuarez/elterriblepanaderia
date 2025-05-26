@@ -33,12 +33,7 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
             </Link>
           </li>
         </ul>
-        <ul className="flex gap-2 text-gray-800 text-lg">
-          <li>
-            <Link to={"/"} className="hover:text-gray-600">
-              Home
-            </Link>
-          </li>
+        <ul className="flex gap-6 text-gray-800 text-lg">
           <li>
             <Link to={"/contacto"} className="hover:text-gray-600">
               Contacto
@@ -50,8 +45,9 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visítanos en Instagram"
-              className="hover:text-gray-600"
+              className="flex items-center gap-2 hover:text-gray-600"
             >
+              Instagram
               <RiInstagramLine size={24} />
             </a>
           </li>
@@ -83,15 +79,6 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
             </li>
             <li>
               <Link
-                to={"/"}
-                onClick={() => setOpen(false)}
-                className="hover:text-gray-600"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
                 to={"/contacto"}
                 onClick={() => setOpen(false)}
                 className="hover:text-gray-600"
@@ -99,15 +86,16 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
                 Contacto
               </Link>
             </li>
+
             <li>
               <a
                 href="https://www.instagram.com/elterriblepanaderia/"
                 target="_blank"
-                rel="noopener noreferrer"
                 aria-label="Visítanos en Instagram"
-                className="hover:text-gray-600"
+                className="hover:text-gray-600 flex items-center gap-2"
                 onClick={() => setOpen(false)}
               >
+                Instagram
                 <RiInstagramLine size={24} />
               </a>
             </li>

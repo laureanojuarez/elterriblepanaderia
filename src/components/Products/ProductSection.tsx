@@ -18,14 +18,13 @@ export const ProductSection = ({ isProductPage }: ProductSectionProps) => {
   const location = useLocation();
   const showButton = location.pathname === "/";
   return (
-    <section className="flex flex-col w-full p-8 justify-center text-center gap-1 bg-stone-100">
+    <section className="flex flex-col w-full p-2 justify-center text-center gap-1 bg-stone-100">
       <div className="flex justify-center items-center gap-2 flex-wrap">
         {(isProductPage ? products : products.slice(0, 3)).map(
           (product: Product) => (
             <ProductCard
               key={product.id}
               name={product.name}
-              desc={product.desc}
               img={product.img}
             />
           )

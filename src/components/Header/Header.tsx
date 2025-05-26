@@ -1,6 +1,6 @@
-import { Navbar } from "./Navbar";
 import { Logo } from "./Logo";
 import { useEffect, useState } from "react";
+import { Navbar } from "./Navbar/Navbar";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

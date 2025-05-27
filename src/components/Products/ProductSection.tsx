@@ -17,10 +17,11 @@ interface ProductSectionProps {
 export const ProductSection = ({ isProductPage }: ProductSectionProps) => {
   const location = useLocation();
   const showButton = location.pathname === "/";
+
   return (
-    <section className="flex flex-col w-full p-2 justify-center text-center gap-1 bg-stone-100">
-      <div className="flex justify-center items-center gap-2 flex-wrap">
-        {(isProductPage ? products : products.slice(0, 3)).map(
+    <section className="flex flex-col w-full p-4 justify-center text-center gap-4 bg-stone-100">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:flex xl:justify-center xl:items-center xl:gap-4 xl:flex-wrap">
+        {(isProductPage ? products : products.slice(0, 4)).map(
           (product: Product) => (
             <ProductCard
               key={product.id}

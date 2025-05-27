@@ -8,14 +8,14 @@ export const FloatingWsp = () => {
   const wspUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
 
   return (
-    <div className="fixed bottom-10 right-10 z-50">
+    <div className="fixed bottom-8 right-8 z-50">
       <Link
         to={wspUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Conectar por WhatsApp"
       >
-        <img src={WspPng} alt="WhatsApp" className="w-20" />
+        <img src={WspPng} alt="WhatsApp" className="w-18" />
       </Link>
     </div>
   );

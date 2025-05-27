@@ -1,5 +1,3 @@
-import { useLocation } from "react-router";
-
 interface ProductCardProps {
   name: string;
   img?: string;
@@ -11,22 +9,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   img,
   desc,
 }) => {
-  const location = useLocation();
-  const isProductPage = location.pathname === "/productos";
-
   return (
-    <div
-      className={`bg-stone-200 flex flex-col gap-2 p-4 border-1 border-gray-600 rounded-lg shadow-md w-full ${
-        isProductPage ? "max-w-sm" : "max-w-xs"
-      }`}
-    >
-      <h1 className="text-2xl font-light">{name}</h1>
+    <div className="bg-stone-200 flex flex-col gap-2 p-3 rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+      <h2 className="text-sm md:text-lg font-light text-center">{name}</h2>
       <img
         src={img}
         alt={name}
-        className="w-full h-64 object-cover rounded-lg"
+        className="w-full h-24 md:h-48 lg:h-56 object-cover rounded-lg"
       />
-      <p className="text-gray-600">{desc}</p>
+      {desc && (
+        <p className="text-gray-600 text-xs md:text-sm text-center">{desc}</p>
+      )}
     </div>
   );
 };

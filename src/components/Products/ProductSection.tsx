@@ -20,8 +20,16 @@ export const ProductSection = ({ isProductPage }: ProductSectionProps) => {
 
   return (
     <section className="flex flex-col w-full p-4 justify-center text-center gap-4 bg-stone-100">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:flex xl:justify-center xl:items-center xl:gap-4 xl:flex-wrap">
-        {(isProductPage ? products : products.slice(0, 4)).map(
+      <div
+        className={`
+        ${
+          isProductPage
+            ? "grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:flex xl:justify-center xl:items-center xl:gap-4 xl:flex-wrap"
+            : "flex flex-col gap-3 md:flex-row md:justify-center md:items-center md:gap-4"
+        }
+      `}
+      >
+        {(isProductPage ? products : products.slice(0, 3)).map(
           (product: Product) => (
             <ProductCard
               key={product.id}

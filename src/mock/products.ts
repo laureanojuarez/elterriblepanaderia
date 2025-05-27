@@ -47,4 +47,10 @@ export const products = [
     desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: "images/panificacion/cuernitos.jpg",
   },
+  {
+    id: 9,
+    name: "Cookies",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "images/panificacion/cookies.jpg",
+  }
 ];

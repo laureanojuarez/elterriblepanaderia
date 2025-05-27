@@ -16,11 +16,11 @@ export const MobileMenu = ({
 
   return (
     <div
-      className={`md:hidden bg-stone-100 shadow-lg fixed left-0 right-0 z-40 p-4 transition-all duration-300 ${
+      className={`md:hidden bg-stone-100 shadow-2xl fixed left-0 right-0 z-40 p-4 transition-all duration-700  ${
         isScrolled ? "top-11" : "top-20"
       }`}
     >
-      <ul className="flex flex-col gap-4 text-lg text-gray-800">
+      <ul className="flex flex-col gap-4 text-lg text-gray-800 items-end px-8">
         <li className="hover:text-gray-600 cursor-pointer" onClick={onClose}>
           Empresa
         </li>

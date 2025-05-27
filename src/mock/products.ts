@@ -52,5 +52,17 @@ export const products = [
     name: "Cookies",
     desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     img: "images/panificacion/cookies.jpg",
+  },
+  {
+    id: 10,
+    name: "Cosas dulces",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "images/panificacion/cosasdulces1.jpg",
+  },
+   {
+    id: 11,
+    name: "Cosas dulces",
+    desc: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "images/panificacion/cosasdulces2.jpg",
   }
 ];

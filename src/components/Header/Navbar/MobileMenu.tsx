@@ -20,8 +20,8 @@ export const MobileMenu = ({
         isScrolled ? "top-11" : "top-20"
       }`}
     >
-      <ul className="flex flex-col gap-4 text-lg text-gray-800 items-end px-8">
-        <li className="hover:text-gray-600 cursor-pointer" onClick={onClose}>
+      <ul className="flex flex-col gap-4 text-lg text-gray-800 items-end px-8 ">
+        <li className="hover:text-gray-600 cursor-pointer " onClick={onClose}>
           Empresa
         </li>
         <li>
@@ -48,7 +48,7 @@ export const MobileMenu = ({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visítanos en Instagram"
-            className="hover:text-gray-600 flex items-center gap-2"
+            className="hover:text-gray-600 flex items-center gap-1"
             onClick={onClose}
           >
             Instagram

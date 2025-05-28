@@ -18,7 +18,7 @@ export const FloatingWsp = () => {
         <img
           src={WspPng}
           alt="WhatsApp"
-          className="w-14 h-14 md:w-16 md:h-16 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 group-active:scale-95 transition-all duration-300 ease-out object-cover"
+          className="w-14 h-14 md:w-16 md:h-16 rounded-full shadow-lg group-hover:shadow-2xl group-hover:scale-105 group-active:scale-95 transition-all duration-300 ease-out object-cover bg-green-400"
         />
         <span className="sr-only">Contactar por WhatsApp</span>
       </a>

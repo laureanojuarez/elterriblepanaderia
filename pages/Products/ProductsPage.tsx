@@ -1,4 +1,4 @@
-import { ProductSection } from "../../src/components/Products/ProductSection";
+import { AllProducts } from "../../src/components/Products/AllProducts";
 
 export function ProductsPage() {
   return (
@@ -6,7 +6,7 @@ export function ProductsPage() {
       <div className="flex flex-col items-center justify-center w-full mt-35 p-2 shadow-md bg-gray-100">
         <h1 className="text-3xl font-bold mb-4">Nuestros Productos</h1>
       </div>
-      <ProductSection isProductPage={true} />
+      <AllProducts />
     </section>
   );
 }

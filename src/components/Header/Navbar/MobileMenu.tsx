@@ -16,19 +16,22 @@ export const MobileMenu = ({
 
   return (
     <div
-      className={`md:hidden bg-stone-100 shadow-2xl fixed left-0 right-0 z-40 p-4 transition-all duration-700  ${
-        isScrolled ? "top-11" : "top-20"
+      className={`md:hidden bg-stone-100 shadow-lg border-t border-gray-200 fixed left-0 right-0 z-30 p-6 transition-all duration-700 ${
+        isScrolled ? "top-16" : "top-20"
       }`}
     >
-      <ul className="flex flex-col gap-4 text-lg text-gray-800 items-end px-8 ">
-        <li className="hover:text-gray-600 cursor-pointer " onClick={onClose}>
+      <ul className="flex flex-col gap-4 text-lg text-gray-800 text-center">
+        <li
+          className="hover:text-gray-600 cursor-pointer py-2"
+          onClick={onClose}
+        >
           Empresa
         </li>
         <li>
           <Link
             to="/productos"
             onClick={onClose}
-            className="hover:text-gray-600"
+            className="block py-2 hover:text-gray-600 transition-colors"
           >
             Productos
           </Link>
@@ -37,7 +40,7 @@ export const MobileMenu = ({
           <Link
             to="/contacto"
             onClick={onClose}
-            className="hover:text-gray-600"
+            className="block py-2 hover:text-gray-600 transition-colors"
           >
             Contacto
           </Link>
@@ -48,11 +51,11 @@ export const MobileMenu = ({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visítanos en Instagram"
-            className="hover:text-gray-600 flex items-center gap-1"
+            className="flex items-center justify-center gap-2 py-2 hover:text-gray-600 transition-colors"
             onClick={onClose}
           >
             Instagram
-            <RiInstagramLine size={24} />
+            <RiInstagramLine size={20} />
           </a>
         </li>
       </ul>

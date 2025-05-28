@@ -9,16 +9,16 @@ export const Logo = ({ isScrolled }: LogoProps) => {
   return (
     <Link
       to="/"
-      className={`absolute top-2
+      className={`absolute top-1
         flex justify-center items-center 
         transition-all duration-700 z-50`}
     >
       <img
         src={logoPanaderia}
         alt="Logo de la panadería"
-        className={`${
-          isScrolled ? "w-20" : "w-32"
-        } transition-all duration-700`}
+        className={` transition-all duration-700 ${
+          isScrolled ? "w-24" : "w-18"
+        } `}
       />
     </Link>
   );

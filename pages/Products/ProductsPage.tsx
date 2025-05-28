@@ -2,10 +2,7 @@ import { AllProducts } from "../../src/components/Products/AllProducts";
 
 export function ProductsPage() {
   return (
-    <section className="shadow-md bg-stone-100">
-      <div className="flex flex-col items-center justify-center w-full mt-35 p-2 shadow-md bg-gray-100">
-        <h1 className="text-3xl font-bold mb-4">Nuestros Productos</h1>
-      </div>
+    <section className="shadow-md bg-stone-100 pt-32 w-full ">
       <AllProducts />
     </section>
   );

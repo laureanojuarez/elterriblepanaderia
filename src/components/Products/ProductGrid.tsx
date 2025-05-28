@@ -3,7 +3,7 @@ import { ProductCard } from "./ProductCard";
 interface Product {
   id: number;
   name: string;
-  desc: string;
+  desc?: string;
   img?: string;
 }
 

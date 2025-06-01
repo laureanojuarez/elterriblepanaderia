@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <header
-      className={` flex justify-center items-center w-full bg-stone-100 transition-all duration-700 fixed ${
+      className={` flex justify-center items-center w-full bg-stone-100 transition-all duration-700 fixed border-b-1 border-stone-500 ${
         isScrolled ? "h-16 shadow-md" : "h-20"
       } `}
     >

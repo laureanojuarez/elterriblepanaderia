@@ -9,7 +9,7 @@ export const FeaturedProducts: React.FC = () => {
       <h2 className="text-2xl font-semibold text-center">
         Productos Destacados
       </h2>
-      <div className="flex flex-wrap justify-center gap-4 w-full max-w-5xl">
+      <div className="flex flex-wrap justify-center gap-4 w-full ">
         {products.slice(0, 3).map((product) => (
           <ProductCard key={product.id} {...product} />
         ))}

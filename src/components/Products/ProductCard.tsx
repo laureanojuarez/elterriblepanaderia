@@ -11,7 +11,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   desc,
 }) => {
   return (
-    <div className="bg-stone-200 flex flex-col gap-2 p-3 rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl w-72 md:w-96 flex-shrink-0">
+    <div className="bg-stone-200 flex flex-col gap-2 p-3 rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-2xl w-56 md:w-96 flex-shrink-0">
       <h2 className="text-sm md:text-lg font-light text-center">{name}</h2>
       <img
         src={img}

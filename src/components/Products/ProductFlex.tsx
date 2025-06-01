@@ -1,3 +1,4 @@
+import { products } from "../../mock/products";
 import { ProductCard } from "./ProductCard";
 
 interface Product {
@@ -12,12 +13,9 @@ interface ProductGridProps {
   columns?: string;
 }
 
-export const ProductGrid: React.FC<ProductGridProps> = ({
-  products,
-  columns = "grid-cols-2",
-}) => {
+export const ProductFlex: React.FC<ProductGridProps> = () => {
   return (
-    <div className={`grid ${columns} gap-3 md:grid-cols-3 lg:grid-cols-4`}>
+    <div className={`flex flex-wrap justify-center gap-4`}>
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
       ))}

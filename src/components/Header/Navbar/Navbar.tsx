@@ -16,8 +16,8 @@ export const Navbar = ({ isScrolled }: NavbarProps) => {
         type="button"
         onClick={() => setOpen(!open)}
         aria-label="Abrir menú"
-        className={`md:hidden text-gray-800 fixed right-4 z-50 transition-all duration-300 ${
-          isScrolled ? "top-4" : "top-6"
+        className={`md:hidden text-gray-800 fixed right-4 z-50 transition-all duration-700 ${
+          isScrolled ? "top-4" : "top-8"
         }`}
       >
         {open ? <RiCloseLine size={24} /> : <RiMenu3Line size={24} />}

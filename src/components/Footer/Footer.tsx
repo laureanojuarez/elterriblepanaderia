@@ -11,11 +11,6 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Logo y descripción */}
           <div className="flex flex-col items-center md:items-start">
-            <img
-              src={logo_elterrible}
-              alt="El Terrible Panadería"
-              className="w-24 h-auto mb-4"
-            />
             <p className="text-gray-700 text-sm text-center md:text-left leading-relaxed">
               Emprendimiento familiar con tradición panadera. Brindando los
               mejores sabores con amor.

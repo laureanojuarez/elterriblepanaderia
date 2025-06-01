@@ -1,4 +1,3 @@
-import logo_elterrible from "../../assets/logo.png";
 import { RiInstagramLine, RiMapPinLine, RiPhoneLine } from "@remixicon/react";
 
 export const Footer = () => {

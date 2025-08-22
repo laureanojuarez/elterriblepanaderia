@@ -1,23 +1,22 @@
-import { Link } from "react-router";
-import { RiInstagramLine } from "@remixicon/react";
+import {Link} from "react-router-dom";
 
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  isScrolled: boolean;
+  headerCompressed: boolean; // true si header está en estado h-24
 }
 
 export const MobileMenu = ({
   isOpen,
   onClose,
-  isScrolled,
+  headerCompressed,
 }: MobileMenuProps) => {
   if (!isOpen) return null;
 
   return (
     <div
-      className={`md:hidden bg-stone-100 shadow-lg border-t border-gray-200 fixed left-0 right-0 z-30 p-6 transition-all duration-700 ${
-        isScrolled ? "top-16" : "top-20"
+      className={`md:hidden bg-stone-100 shadow-lg border-t border-gray-200 fixed left-0 right-0 z-40 p-6 transition-all duration-500 ${
+        headerCompressed ? "top-24" : "top-32"
       }`}
     >
       <ul className="flex flex-col gap-4 text-lg text-gray-800 text-center">
@@ -55,7 +54,6 @@ export const MobileMenu = ({
             onClick={onClose}
           >
             Instagram
-            <RiInstagramLine size={20} />
           </a>
         </li>
       </ul>

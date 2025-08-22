@@ -1,25 +1,30 @@
-import { Link } from "react-router";
+import {Link} from "react-router-dom";
 import logoPanaderia from "../../assets/logo.png";
 
 interface LogoProps {
   isScrolled: boolean;
+  menuOpen?: boolean;
 }
 
-export const Logo = ({ isScrolled }: LogoProps) => {
+export const Logo = ({isScrolled, menuOpen}: LogoProps) => {
+  // Forzamos aspecto “comprimido” también cuando el menú mobile está abierto
+  const compressed = isScrolled || menuOpen;
   return (
-    <Link
-      to="/"
-      className={`absolute 
-        flex justify-center items-center 
-        transition-all duration-1000 z-50 ${isScrolled ? "top-1" : "top-0"}`}
-    >
-      <img
-        src={logoPanaderia}
-        alt="Logo de la panadería"
-        className={` transition-all duration-1000 ${
-          isScrolled ? "w-24" : "w-20"
-        } `}
-      />
+    <Link to="/" aria-label="Ir al inicio" className="flex items-center">
+      <div
+        className={`w-40 h-40 flex justify-center transition-all duration-500 ${
+          compressed ? "pt-1" : "pt-3"
+        }`}
+      >
+        <img
+          src={logoPanaderia}
+          alt="Logo de la panadería"
+          className={`select-none pointer-events-none transition-transform duration-500 ease-out origin-top ${
+            compressed ? "scale-60" : "scale-120"
+          }`}
+          draggable={false}
+        />
+      </div>
     </Link>
   );
 };

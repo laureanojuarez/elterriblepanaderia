@@ -1,7 +1,7 @@
-import { Link } from "react-router";
+import {Link} from "react-router-dom";
 import Button from "../UI/Button/Button";
-import { products } from "../../mock/products";
-import { ProductCard } from "./ProductCard";
+import {products} from "../../mock/products";
+import {ProductCard} from "./ProductCard";
 
 export const FeaturedProducts: React.FC = () => {
   return (

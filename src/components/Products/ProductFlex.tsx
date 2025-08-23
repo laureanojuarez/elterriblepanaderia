@@ -1,21 +1,12 @@
-import { products } from "../../mock/products";
-import { ProductCard } from "./ProductCard";
+import {products} from "../../mock/products";
+import {ProductCard} from "./ProductCard";
 
-interface Product {
-  id: number;
-  name: string;
-  desc?: string;
-  img?: string;
-}
-
-interface ProductGridProps {
-  products: Product[];
-  columns?: string;
-}
-
-export const ProductFlex: React.FC<ProductGridProps> = () => {
+export const ProductFlex: React.FC = () => {
   return (
-    <div className={`flex flex-wrap justify-center gap-4`}>
+    <div
+      className="grid gap-4 w-full
+      grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] justify-items-center"
+    >
       {products.map((product) => (
         <ProductCard key={product.id} {...product} />
       ))}
